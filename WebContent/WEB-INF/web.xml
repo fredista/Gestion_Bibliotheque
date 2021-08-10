@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name> Servlogin</servlet-name>
+    <servlet-class>com.tpgenielogiciel.serv.Servlogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+  		<servlet-name>inscription</servlet-name>
+  		<servlet-class>com.tpgenielogiciel.serv.inscription</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ServLivre</servlet-name>
+    <servlet-class>com.tpgenielogiciel.serv.ServLivre</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServAccueil</servlet-name>
+    <servlet-class>com.tpgenielogiciel.serv.ServAccueil</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServAdmin</servlet-name>
+    <servlet-class>com.tpgenielogiciel.serv.ServAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServAccueil</servlet-name>
+    <url-pattern>/accueil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Servlogin</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>inscription</servlet-name>
+  	<url-pattern>/inscript</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ServLivre</servlet-name>
+    <url-pattern>/livre</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServAdmin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

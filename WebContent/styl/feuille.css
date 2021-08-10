@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body, p, legend, label, input {
+font: normal 18pt verdana, helvetica, sans-serif;
+
+}
+body{
+	background-image:url("image/biblimag.jpg");
+}
+fieldset {
+padding: 10px;
+border: 1px #0568CD solid;
+margin: 10px;
+width: 800px;
+}
+legend {
+font-weight: bold;
+color: #0568CD;
+}
+form label {
+float: left;
+width: 200px;
+margin: 13px 3px 0px 0px;
+color:#FEFEFE;
+
+}
+form input {
+margin: 13px 3px 0px 0px;
+border: 1px #999 solid;
+
+}
+form input.sansLabel {
+margin-left: 200px;
+}
+.requis {
+color: #c00;
+}
+.erreur {
+color: #900;
+}
+form input.sansLabel {
+margin-left: 200px;
+margin-top: 15px;
+margin-bottom: 20px;
+}
